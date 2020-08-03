@@ -22,14 +22,10 @@ export default {
     saleProducts() {
       return this.$store.getters.saleProducts;
     },
-    ...mapGetters([
-      "salesProducts"
-    ])
+    ...mapGetters(["salesProducts"])
   },
   methods: {
-    ...mapActions([
-      "reducePrice"
-    ])
+    ...mapActions(["reducePrice"])
   }
 };
 </script>
